@@ -19,7 +19,7 @@ const Settings = () => {
       <div className="bg-white min-h-full rounded-lg p-3">
         <h2 className="text-center font-semibold text-2xl my-10">Settings</h2>
         <div>
-          <button className="p-4 mt-5 w-full text-lg font-semibold flex justify-start items-center gap-3 bg-[#F7F8FA] rounded-md">
+          <button className="p-4 mt-5 w-full font-medium flex justify-start items-center gap-3 bg-[#F7F8FA] rounded-md">
             <Image
               src="/images/language.svg"
               alt="Language"
@@ -29,7 +29,7 @@ const Settings = () => {
             />
             Language Settings
           </button>
-          <button className="p-4 mt-5 w-full text-lg font-semibold flex justify-start items-center gap-3 bg-[#F7F8FA] rounded-md">
+          <button className="p-4 mt-5 w-full font-medium flex justify-start items-center gap-3 bg-[#F7F8FA] rounded-md">
             <Image
               src="/images/general.svg"
               alt="general"
@@ -39,7 +39,7 @@ const Settings = () => {
             />
             Gereral Settings
           </button>
-          <button className="p-4 mt-5 w-full text-lg font-semibold flex justify-start items-center gap-3 bg-[#F7F8FA] rounded-md">
+          <button className="p-4 mt-5 w-full font-medium flex justify-start items-center gap-3 bg-[#F7F8FA] rounded-md">
             <Image
               src="/images/font.svg"
               alt="font"
@@ -51,8 +51,10 @@ const Settings = () => {
           </button>
           <div className="relative">
             <button
-              className={`p-4 mt-5 w-full text-lg font-semibold flex justify-start items-center gap-3 rounded-md ${
-                showDropdown ? "border-l-[5px] border-[#1FA45B] text-[#1FA45B]" : "bg-[#F7F8FA] text-gray-900"
+              className={`p-4 mt-5 w-full font-medium flex justify-start items-center gap-3 rounded-md ${
+                showDropdown
+                  ? "border-l-[5px] border-[#1FA45B] text-[#1FA45B]"
+                  : "bg-[#F7F8FA] text-gray-900"
               }`}
               onClick={toggleDropdown}
             >
