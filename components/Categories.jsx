@@ -368,7 +368,7 @@ const Categories = () => {
                         <li key={subIndex} className="mb-8 ml-4">
                           <div className="absolute w-2 h-2 mt-2 bg-[#1FA45B] rounded-full -left-1 border border-[#1FA45B]"></div>
                           <button
-                            className="text-sm text-black hover:text-emerald-700"
+                            className="text-sm text-start text-black hover:text-emerald-700"
                             id={`${filteredSubItem.subcat_name_en}`}
                           >
                             {filteredSubItem.subcat_name_en}
@@ -385,32 +385,3 @@ const Categories = () => {
 };
 
 export default Categories;
-
-// export async function getServerSideProps() {
-//   try {
-//     const categoryResult = await fetch(
-//       `${process.env.NEXT_PUBLIC_BACKEND_ENPOINT}/category`
-//     );
-//     const categoryData = await categoryResult.json();
-
-//     const subCategoryResult = await fetch(
-//       `${process.env.NEXT_PUBLIC_BACKEND_ENPOINT}/sub-category`
-//     );
-//     const subCategoryData = await categoryResult.json();
-
-//     return {
-//       props: {
-//         categoryData: categoryData,
-//         subCategoryData: subCategoryData,
-//       },
-//     };
-//   } catch (error) {
-//     console.error("Error fetching products data:", error);
-//     return {
-//       props: {
-//         categoryData: null,
-//         subCategoryData: null,
-//       },
-//     };
-//   }
-// }
